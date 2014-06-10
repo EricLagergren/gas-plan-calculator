@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> <!--manifest="cache.appcache"-->
+<head>
+  <title>Gas Prices Calculator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='cleartype' content='on'>
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Subnetting Calculator">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="robots" content="index, follow">
+    <meta name="bitly-verification" content="7c235b444737"/>
+    <meta name="autdor" content="Eric Lagergren">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <!--<script type="text/javascript">
+    if("standalone"in window.navigator&&window.navigator.standalone){var noddy,remotes=false;document.addEventListener("click",function(event){noddy=event.target;while(noddy.nodeName!=="A"&&noddy.nodeName!=="HTML")noddy=noddy.parentNode;if("href"in noddy&&noddy.href.indexOf("http")!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){event.preventDefault();document.location.href=noddy.href}},false)};
+    </script>-->
+</head>
+<body>
+	<form name="form" onsubmit="val(); return false;">
+        <div class="left">
+                <h1>Jay Inslee Gas Prices Calculator</h1>
+        <input class="clearfix autocomplete" type="text" name="a" placeholder="Gallons per fill-up">
+		<input class="clearfix autocomplete" type="text" name="b" placeholder="Fill-ups per month">
+        <br>
+		<input class="submit" type="submit" name="submit" value="submit">
+    </div>
+        <div class="right" id="info">
+    <table>
+    <tbody>
+        <tr>
+        <td>Current:</td>
+        <td class="results" id="current"></td>
+        </tr>
+        <tr>
+        <td>Future:</td>
+        <td class="results" id="future"></td>
+        </tr>
+        <tr>
+        <td>Change per month:</td>
+        <td class="results" id="change"></td>   
+        </tr>
+        <tr>
+        <td>Change per year:</td>
+        <td class="results" id="year"></td>
+        </tr>
+    </tbody>
+    </table>
+</div>  
+	</form>
+
+
+
+  <script src="/assets/scripts/calc.js"></script>
+</body>
+
+</html>
